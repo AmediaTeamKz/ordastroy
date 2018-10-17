@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	title Document
+	link(rel="stylesheet", href="../css/main.min.css")
+	script(src="../js/scripts.min.js")
+body
+	.modalBg
+		#call.modalSelf
+			.modalHeader
+				h4.modal-title Оставить заявку
+				button.close(modal="call")
+					span
+					span
+
+			.modalBody
+				form(method="post" action="mail.php")
+					input(type="text" placeholder="Ваше имя")
+					input(type="tel" placeholder="Ваш номер")
+					input(type="submit" value="Отправить")
+			.modalFooter
+	
+	.top-line
+		.container.df.aic.jsb
+			.box.df.aic.fww
+				a(href="/index.html").logotype
+					img(src="../img/svg/logotype.svg", alt="")
+				p.sub.
+					Ремонт и дизайн квартир в Астане<br/>
+					Мы работаем на качество!
+			.box.dfc.aife.fww
+				span.tel
+					a(href="tel: +77781647391")  +77781647391
+				p.sub.
+					с 9.00 до 21.00 без выходных Заказать звонок
+	.redheader
+		.container
+			ul.hor-menu.df.aic.jcc
+				li
+					a(href="#") дизайн интерьера
+				li
+					a(href="#") ремонт квартир
+				li
+					a(href="#") ремонт домов и коттеджей
+				li
+					a(href="#") ремонт офисов
+
+
+	header#header.header.dfc
+		.container.dfc
+			.header-wrp-text.dfc.jsb.center
+				h1.header-title Ремонт и отделка квартир
+				small.subtitle Ремонт в квартире - это легко!
+				//- small.subtitle.bg привезем, установим - бесплатно!
+			.wrp-brn.dfc.aic
+				a(href="https://wa.me/77783083300").whatsappbtn
+					img(src="../img/svg/whatsapp.svg", alt="") 
+					span написать в whatsapp
+				a(href="tel:+77783083300").subwhatsapp или показать номер
+		//- a(href="#short-us").header-down-btn.centerX.df.bottom
+		//- 	img(src="../img/svg/he.svg", alt="").center
+
+	section#short-us
+		.container
+			.wrp-content.dfc
+				h3.section-title.center немного о нас
+				p.paraq.
+					Существует четыре вида ремонта квартиры — элитный, косметический, черновой и капитальный. Сроки выполнения работ, затраты на материалы и оплату работы зависят от начального состояния помещения и сложности необходимой работы. В результате цена отделки помещений зависит от желаний и возможностей хозяина жилища.
+				//- p.paraq.
+					Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+				
+
+
+				//- .wrp-icons.df.fww
+				//- 	-
+				//- 		var icons = ['../img/svg/ico1.svg',
+				//- 					 '../img/svg/ico2.svg',
+				//- 					 '../img/svg/ico3.svg'];
+				//- 	-
+				//- 		var text = ['хорошое качество',
+				//- 					'быстрый монтаж',
+				//- 					'оплата по факту'];
+
+				//- 	-for(x=0;x!=3;x++){
+				//- 		.box-icon.aic.dfc
+				//- 			img(src=icons[x])
+				//- 			p= text[x]			
+				//- 		-};
+
+	section#warning
+		.container
+			.wrp-content.dfc
+				//- span.centerX.df.warningsignal
+				//- 	img(src="../img/svg/!.svg", alt="").center
+
+				h3.section-title.centerX.tac.
+					ультра современный дизайн
+				p.paraq.
+					Дизайн интерьера – настоящее искусство, позволяющее преобразить дом или квартиру в комфортное для вас помещение. Гармоничный, уютный и стильный интерьер, способен создать только настоящий профессионал. Разработку дизайна предлагают огромное количество организаций и частных лиц. Но выбрать настоящего специалиста непросто.
+				//- p.paraq.
+				//- 	Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+			.wrp-levels.df
+				.box
+					img(src="../img/svg/circle.svg")
+					small Детальное ознакомление<br>планирование сроков
+				.box
+					img(src="../img/svg/circle2.svg")
+					small Разработка чертежей<br> с пожеланиями заказчика
+				.box
+					img(src="../img/svg/circle3.svg")
+					small Фотореалистичная<br> визуализация всех помещений
+	
+
+	section#danger
+		.container
+			.wrp-content.df.fww.jsb
+				.box
+					h3.section-title виды услуг,<br/>которые мы предоставляем
+					small.subtitle Черновой ремонт
+					p.paraq.
+						Черновой ремонт – это понятие очень распространено на сегодняшнем строительном рынке, поэтому сложился определенный набор работ, которые обыкновенно входят в него. Как правило, этот набор включает в себя полностью завершенные строительные и минимальный объем отделочных работ.
+					button.call(modal="call") заказать сейчас
+				//- .box
+				//- 	ul.list-priv
+				//- 		-
+				//- 			var textlist = ["Нержавеющий\n алюминиевый материал",
+				//- 							'Не ограничивает обзор и не портит эстетический вид окна',
+				//- 							'Решетки легко снимаются и с ними легко мыть окна',
+				//- 							'Установка 1 окна занимает 15 минут'];
+				//- 			var xx = 1;
+					
+				//- 		-for(i=0;i!=4;i++){
+				//- 			li.df.aic
+				//- 				img(src='/img/svg/num/'+xx+'.svg')
+				//- 				p.paraq= textlist[i]
+				//- 				- xx+=1
+				//- 		-};
+
+
+	section#uwork
+		.container
+			.wrp-content.dfc
+				h3.section-title.centerX наши работы
+
+				
+				.grid
+					-
+						var imgs=[
+									'http://straj-doors.ru/images/resh/resh-ot-detej.jpg',
+									'http://s09.radikal.ru/i182/1406/de/c243563bdba0.jpg',
+									'https://zonabalkona.ru/wp-content/uploads/2015/07/zashhita-ot-detej-na-plastikovye-okna2.jpg',
+									'',
+									'',
+									'',
+									'',
+									'',
+								];
+					-for(i=0;i!=3;i++){
+						.box-item
+							img(src=imgs[i])
+					-};
+
+	section#rev
+		.container
+			.wrp-content.dfc
+				.revslider
+
+					-for(i=0;i!=6;i++){
+						.slider-item.dfc.aic
+							img(src="/img/rev/1.jpg")
+							span.peoplename Асия
+							
+							p.paraq.tac.
+								Основной задачей каждого родителя является забота о безопасности своего малыша. Как только ребенок встал на ноги и начал самостоятельно передвигаться по квартире, взрослые должны быть начеку.l
+							
+							p.paraq.tac.
+								Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
+					-};
+
+
+	section#project
+		.container
+			.wrp-content.dfc
+				.wrp-border.dfc
+					h4.section-title.tac.
+						проект «KIDSTOPkz» <br/>
+						создан чтобы обезопасить<br/>
+						ваше чадо от случайного<br/>
+						выпадения из окна<br/>
+					form(action="mail.php" method="POST").dfc.formFooter
+						input(type="text" placeholder="ваше имя")
+						input(type="text" placeholder="номер телефона")
+						button.call(type="submit") заказать сейчас
+
+
+	footer#footer
+		.container
+			.wrp-footer.df.fww.jsb.aic
+				span.tel
+					span по вопросам:
+					a(href="tel: +77781647391")  +77781647391
+				
+				ul.df.aic.listsoc
+					li поделится:
+					each src in ['../img/svg/soc/insta.svg','../img/svg/soc/in.svg','../img/svg/soc/face.svg']
+						li
+							a(href='#').socbtn
+								img(src=src, alt="").svg
