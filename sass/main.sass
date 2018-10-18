@@ -257,6 +257,7 @@ header#header.header
 	margin-bottom: 51px
 	line-height: 40px
 	font-family: proxima
+	text-align: center
 	&.v2
 		color: $accent-color
 
@@ -358,16 +359,63 @@ header#header.header
 		// max-width: 490px
 		p
 			margin-bottom: 75px
-		.section-title
+		.section-title.uslugi
 			margin-bottom: 55px
 			text-align: center
 			font-size: 40px
 	.box:nth-child(2)
 		// max-width: 320px
+	.listremont
+		list-style: none
+		margin: 0
+		padding: 0
+		margin-bottom: 63px
+		li
+			padding-left: 10px
+			font-size: 16px
+			span
+				margin: 5px
+				display: inline-flex
+			&:before
+				content: ''
+				display: inline-block
+				height: 16px
+				width: 16px
+				vertical-align: middle
+				border-radius: 50%
+				background-color: #FF5741
+				margin-right: 15px
+				position: relative
+				top: calc(50% - 8px)
+				left: 0
+	.uslugi
+
+
+.subtitle.title
+	margin-bottom: 32px
+	font-size: 40px
+	color: rgba(0, 0, 0, 0.60)
+	font-weight: normal
+	text-transform: uppercase
+
+
 	.call
 		width: 100%
 		max-width: 342px
 		height: 60px
+
+	.call
+		background: #FF5741
+		text-transform: uppercase
+		font-size: 16px
+		border: none
+		border-radius: 10em
+		padding: 10px 25px
+		font-weight: bold
+		color: white
+		transition: 0.3s all
+		&:hover
+			background-color: rgba(255, 87, 65, 0.80)
 .list-priv
 	li
 		margin-bottom: 43px
@@ -376,8 +424,10 @@ header#header.header
 			height: 40px
 			display: block
 			margin-right: 23px
-		p.paraq
-			margin-bottom: 0
+p.paraq.text
+	margin-bottom: 38px
+	text-align: left
+
 
 
 
@@ -476,7 +526,7 @@ header#header.header
 #project
 	padding-top: 95px
 	padding-bottom: 95px
-	background: url(../img/warnin.jpg) no-repeat
+	background: url(../img/footerbg.jpg) no-repeat
 	background-size: cover
 
 	position: relative
