@@ -2,12 +2,36 @@
 	.sub
 		font-size: 14px
 @media screen and (max-width:992px)
+	#warning
+		.wrp-levels
+			.box
+				min-width: 230px
 	#danger
 		.box:nth-child(1)
 		    max-width: 293px
 	.sub
 		display: none	
 @media screen and (max-width:768px)
+	.top-line
+		padding: 20px 0
+	#warning
+		.wrp-levels
+			.box
+				min-width: 160px
+				img
+					width: 56px
+					height: 56px
+					margin-bottom: 20px
+				&:nth-child(2)
+					&:after,
+					&:before
+						width: 50px
+						top: 18%
+					&:after
+						right: -25px
+					&:before
+						left: -25px
+
 	#rev
 		.slick-arrow
 		    top: calc(20% - 40.5px)
@@ -43,7 +67,44 @@
 			display: none
 		.tel
 			margin-right: 0
+@media screen and (min-width:600px)
+	.rehe
+		display: none
+	.hambu
+		display: none
 @media screen and (max-width:600px)
+	.hambu
+		display: flex
+		&.close
+			display: block
+			position: relative
+			height: 20px
+			span
+				top: 50%
+				left: 0
+				position: absolute
+				&:nth-child(1)
+					transform: rotate(45deg)
+				&:nth-child(2)
+					transform: rotate(-45deg)
+
+	.redheader
+		position: fixed
+		z-index: 33
+		width: 100%
+		top: 0
+		height: 100%
+		background: #FFFFFF
+		display: none
+		.rehe
+			padding: 20px 0
+			background: white
+			border-bottom: 1px solid #DFDFDF
+		ul.hor-menu
+			flex-direction: column
+			align-items: flex-start
+			a
+				color: black
 	#warning
 		padding: 25px 0
 	#project
@@ -53,6 +114,8 @@
 
 
 @media screen and (max-width:499px)
+	.wrp-levels
+		display: none
 	.header-title
 		font-size: 30px
 	.subtitle
@@ -60,9 +123,16 @@
 	.subtitle.bg
 		font-size: 16px
 	.tel
-		span
-			display: none
+		font-size: 16px
+	.logotype
+		img
+			width: 102px
 @media screen and (max-width:411px)
+	.uslugi
+		li:before
+			display: none
+	.section-title
+		font-size: 28px
 	.listsoc
 		li:nth-child(1)
 			display: none

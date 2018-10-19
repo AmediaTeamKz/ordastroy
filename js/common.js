@@ -1,4 +1,31 @@
 $(function(){
+$('[data-tab]').click(function(){
+    var t = $(this),
+        a = $('[tab].active'),
+        ti = t.attr('data-tab'),
+        ne = $('[tab='+ti+']');
+    
+    if(!ne.hasClass('active')){
+        ne.fadeIn().addClass('active')
+        a.hide().removeClass('active');
+    }
+
+})
+
+$('.hambu').click(function(){
+    var m = $('.redheader'),
+        b = $('body');
+
+    if(!m.hasClass('open')){
+        m.fadeIn().addClass('open')
+        // b.css({'overflow':'hidden'})
+    }
+    else{
+        // b.css({'overflow':'auto'})
+        m.fadeOut().removeClass('open')
+    }
+})
+
 
 $('.revslider').slick({
     nextArrow: '<button class="slick-next"><img class="svg" src="../img/svg/greenarr.svg" alt="" /></button>',
