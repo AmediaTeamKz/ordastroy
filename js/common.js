@@ -91,10 +91,18 @@ jQuery('img.svg').each(function(){
 
 
  $("a[href*='#']").on("click", function(e){
+    $('.redheader').stop().animate({
+        'opacity':'0.3'
+    })
     var anchor = $(this);
     $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top
-    }, 777);
+    }, 777, function(){
+    $('.redheader').stop().animate({
+        'opacity':'1'
+    })
+    });
+
     e.preventDefault();
     return false;
 });

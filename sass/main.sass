@@ -138,7 +138,7 @@ header#header.header
 		left: 0
 		right: 0
 		bottom: 0
-		background: rgba(black, 0.30)
+		background: rgba(black, 0.55)
 	.container
 		position: relative
 		&>*
@@ -374,9 +374,12 @@ header#header.header
 		li
 			padding-left: 10px
 			font-size: 16px
+			position: relative
+			margin-bottom: 25px
 			span
 				margin: 5px
-				display: inline-flex
+				display: block
+				margin-left: 20px
 			&:before
 				content: ''
 				display: inline-block
@@ -386,7 +389,7 @@ header#header.header
 				border-radius: 50%
 				background-color: #FF5741
 				margin-right: 15px
-				position: relative
+				position: absolute
 				top: calc(50% - 8px)
 				left: 0
 	.uslugi
