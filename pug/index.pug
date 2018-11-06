@@ -3,7 +3,7 @@ html(lang="en")
 head
 	meta(charset="UTF-8")
 	meta(name="viewport" content="width=device-width, initial-scale=1")
-	title Document
+	title Ремонт квартир
 	link(rel="stylesheet", href="../css/main.min.css")
 	script(src="../js/scripts.min.js")
 body
@@ -17,8 +17,8 @@ body
 
 			.modalBody
 				form(method="post" action="mail.php")
-					input(type="text" placeholder="Ваше имя")
-					input(type="tel" placeholder="Ваш номер")
+					input(type="text" placeholder="Ваше имя" name="username")
+					input(type="tel" placeholder="Ваш номер" name="usernumber")
 					input(type="submit" value="Отправить")
 			.modalFooter
 	
@@ -32,7 +32,7 @@ body
 					Мы работаем на качество!
 			.box.dfc.aife.fww
 				span.tel
-					a(href="tel: +77781647391")  +77781647391
+					a(href="tel: 87010278008")  87010278008
 				p.sub.
 					с 9.00 до 21.00 без выходных
 			button.hambu
@@ -68,10 +68,10 @@ body
 				small.subtitle Ремонт в квартире - это легко!
 				//- small.subtitle.bg привезем, установим - бесплатно!
 			.wrp-brn.dfc.aic
-				a(href="https://wa.me/77783083300").whatsappbtn
+				a(href="https://wa.me/87010278008").whatsappbtn
 					img(src="../img/svg/whatsapp.svg", alt="") 
 					span написать в whatsapp
-				a(href="tel:+77783083300").subwhatsapp или показать номер
+				a(href="tel:87010278008").subwhatsapp или показать номер
 		//- a(href="#short-us").header-down-btn.centerX.df.bottom
 		//- 	img(src="../img/svg/he.svg", alt="").center
 
@@ -135,12 +135,12 @@ body
 							ul.uslugi
 								li(data-tab="1")
 									span Черновой ремонт
-								li(data-tab="2") 
-									span ремонт Premium класса
 								li(data-tab="3")
 									span Косметический ремонт
 								li(data-tab="4")
 									span Евро ремонт
+								li(data-tab="2") 
+									span Ремонт Premium класса
 					.col-md-6
 						.wrp-tabs-content(tab="1").active
 							h4.subtitle.title Черновой ремонт
@@ -226,9 +226,9 @@ body
 				.grid
 					-
 						var imgs=[
-									'http://straj-doors.ru/images/resh/resh-ot-detej.jpg',
-									'http://s09.radikal.ru/i182/1406/de/c243563bdba0.jpg',
-									'https://zonabalkona.ru/wp-content/uploads/2015/07/zashhita-ot-detej-na-plastikovye-okna2.jpg',
+									'/img/por1.jpeg',
+									'/img/por2.jpeg',
+									'/img/por3.jpeg',
 									'',
 									'',
 									'',
@@ -244,18 +244,24 @@ body
 		.container
 			.wrp-content.dfc
 				.revslider
-
-					-for(i=0;i!=6;i++){
+					-
+						var names = [
+							'Дарина',
+							'Юлия',
+							'Абзал и Айгуль'
+						];
+					-
+						var textotz = [
+							'Заказала ремонт квартиры компании Ордастрой. Очень довольна результатом, ребята молодцы - установили быстро, мусор убрали. И зимой, на улице мороз, а дома тепло и уютно. Советую всем знакомым и близким.',
+							'Смотрю на сделанный ремонт и получаю удовольствие. С уверенностью могу сказать про компанию Ордастрой - Знак качества. В этой компании все организованно, профессионально быстро и очень качественно. Процветания вам!!',
+							'Заказали ремонт у компании Ордастрой и остались очень довольны! Безмерно благодарны этим ребятам.'
+						];
+					-for(i=0;i!=3;i++){
 						.slider-item.dfc.aic
-							img(src="/img/rev/1.jpg")
-							span.peoplename Асия
-							
-							p.paraq.tac.
-								Основной задачей каждого родителя является забота о безопасности своего малыша. Как только ребенок встал на ноги и начал самостоятельно передвигаться по квартире, взрослые должны быть начеку.
-							
-							p.paraq.tac.
-								Самое главное, что должны сделать родители – это убедится в том, что ребенок не сможет самостоятельно открыть окно. Не рекомендуется использовать москитные сетки. Они особенно опасны, так как создают иллюзию защиты, но не способны выдержать вес малыша
-					-};
+							img(src="/img/rev/"+i+".png")
+							span.peoplename= names[i]
+							p.paraq.tac= textotz[i]
+						-};
 
 
 	section#project
@@ -265,8 +271,8 @@ body
 					h4.section-title.tac.
 						Ремонт квартир под ключ – обретение комфорта, стиля, добротности!
 					form(action="mail.php" method="POST").dfc.formFooter
-						input(type="text" placeholder="ваше имя")
-						input(type="text" placeholder="номер телефона")
+						input(type="text" placeholder="ваше имя" name="username")
+						input(type="text" placeholder="номер телефона" name="usernumber")
 						button.call(type="submit") заказать сейчас
 
 
@@ -275,7 +281,7 @@ body
 			.wrp-footer.df.fww.jsb.aic
 				span.telfooter
 					span по вопросам:
-					a(href="tel: +77781647391")  +77781647391
+					a(href="tel: 87010278008")  87010278008
 				
 				ul.df.aic.listsoc
 					li поделится:
