@@ -21,7 +21,8 @@ body
 					input(type="tel" placeholder="Ваш номер" name="usernumber")
 					input(type="submit" value="Отправить")
 			.modalFooter
-	
+	a#call(href="tel:+77010278008")
+		img(src="/img/phone.png")
 	.top-line
 		.container.df.aic.jsb
 			.box.df.aic.fww
@@ -68,9 +69,8 @@ body
 				small.subtitle Ремонт в квартире - это легко!
 				//- small.subtitle.bg привезем, установим - бесплатно!
 			.wrp-brn.dfc.aic
-				a(href="https://wa.me/87010278008").whatsappbtn
-					img(src="../img/svg/whatsapp.svg", alt="") 
-					span написать в whatsapp
+				a(href="" modal="call").whatsappbtn
+					span заказать звонок
 				a(href="tel:87010278008").subwhatsapp или показать номер
 		//- a(href="#short-us").header-down-btn.centerX.df.bottom
 		//- 	img(src="../img/svg/he.svg", alt="").center
